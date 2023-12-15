@@ -25,23 +25,23 @@ def send_hello(message):
                                      f"Теперь могу немного работать с изображениями"
                                      f" и другими видами информации")
 
-def bird(message):
-    return "стань попугаем".lower() in message.text
-@bot.message_handler(content_types=['text'],func=bird)
-def pirett(message):
-    bot.send_message(message.chat.id,'Приделываю клюв....разноцветный окрас...крылья....Готово!Я попугай')
-    @bot.message_handler(content_types=['text'])
-    def pirr(message):
-        bot.send_message(message.chat.id, message.text)
-
-def not_bird(message):
-    return "попугай стоп" in message.text
-@bot.message_handler(content_types=['text'],func=not_bird)
-def notbird(message):
-    bot.send_message(message.chat.id,'Попугай приостанолен')
-    #@bot.message_handler(content_types=['text'])
-    bot.send_message(message.chat.id,"я готов работать дальше")
-
+# def bird(message):
+#     return "стань попугаем".lower() in message.text
+# @bot.message_handler(content_types=['text'],func=bird)
+# def pirett(message):
+#     bot.send_message(message.chat.id,'Приделываю клюв....разноцветный окрас...крылья....Готово!Я попугай')
+#     @bot.message_handler(content_types=['text'])
+#     def pirr(message):
+#         bot.send_message(message.chat.id, message.text)
+#
+# def not_bird(message):
+#     return "попугай стоп" in message.text
+# @bot.message_handler(content_types=['text'],func=not_bird)
+# def notbird(message):
+#     bot.send_message(message.chat.id,'Попугай приостанолен')
+#     #@bot.message_handler(content_types=['text'])
+#     bot.send_message(message.chat.id,"я готов работать дальше")
+#
 
 @bot.message_handler(content_types=['photo'])
 def pht(message):

@@ -49,9 +49,13 @@ def pht(message):
                                    'RLZS0yaGQ6KBtTtAQADAgADcwADMwQ')
     bot.send_message(message.chat.id,"Прям как у тебя. Совпадение? Не думаю)✌")
 
-# @bot.message_handler(content_types=['video'])
-# def vd(messdge):
-#     bot.send_audio()
+@bot.message_handler(content_types=['video'])
+def vd(message):
+     bot.send_message(message.chat.id,"Что-то слишком тяжело(😒")
+
+@bot.message_handler(content_types=['audio'])
+def aud(message):
+    bot.send_message(message.chat.id,"Потанцуем!😎")
 def bye(message):
     return "пока".lower() in message.text
 @bot.message_handler(content_types=["text"],func=bye)

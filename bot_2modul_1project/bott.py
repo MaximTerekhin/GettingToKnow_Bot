@@ -12,8 +12,7 @@ chat_id = 5255568104
 @bot.message_handler(commands=['help'])
 def send_help(message):
     bot.send_message(message.chat.id,f"1: Для запуска нажми /start\n"
-                                     f"2: Моё имя - Стрибот!\n"
-                                     f"3: Приятен в общении, могу стать попугаем,для этого напиши стань попугаем, а чтобы выключить его - попугай стоп")
+                                     f"2: Моё имя - Стрибот!\n")
 bot.polling(none_stop=True)
 
 @bot.message_handler(commands=['start'])

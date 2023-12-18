@@ -20,7 +20,7 @@ def send_hello(message):
      bot.send_message(message.chat.id,".....Привет!\n"
                                      f"Моё имя - Стрибот!\n"
                                      f"Приятен в общении,\n"
-                                     f"Могу рассказать какие проекты ты писал.")
+                                     f"Могу рассказать какие проекты ты писал")
 
 
 # def bird(message):
